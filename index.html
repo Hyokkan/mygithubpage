@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hyokkan</title>
+	<meta name="description" content="Hello World">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<style>
+
+.headerimg {
+  border-radius:50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="navbar navbar-default navbar-fixed-top" style="background-color: black">
+		<div class="container">
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+  						  <span class="icon-bar"></span>
+				    </button>
+				    <a href="" class="navbar-brand">Mary Zhu</a>
+			  </div>
+
+			<div class="collapse navbar-collapse navbar-right" id="example">
+				<ul class="nav navbar-nav" >
+					<li id="aboutli" class="active"><a href="#about" class="navtext" id="aboutLoad">About Me</a></li>
+					<li id="resumeli"><a href="#resume" class ="navtext" id="resumeLoad">Resume</a></li>
+					<li id="portfolioli"><a href="#portfolio" class="navtext" id="portfolioLoad">Portfolio</a></li>
+					<li id="contactli" ><a href="#contactme" class="navtext" id="contactLoad">Contact Me</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center" id="jumbotron">
+	<div class = "container-fluid" style="padding-top:160px" >
+		<img class="headerimg" src="profpic.jpg">
+		<h1 class="headertext" style="color: white">Mary Zhu</h1>
+	</div>
+</div>
+
+<!--About Me-->
+<div class="container" id="about">
+
+	<ul class="nav nav-pills nav-justified" >
+		<li class="active"><a class="tabtext" href="#myself" data-toggle="tab">About Me</a></li>
+		<li><a class="tabtext" href="#skills" data-toggle="tab">My skills</a></li>
+	</ul>
+	<br>
+	<div class="tab-content">
+		<div class="tab-pane fade in active"  id="myself">
+			<div class="row">
+				<div class="col-xs-4 hidden-xs"><img src="http://www.engineering.utoronto.ca/wp-content/blogs.dir/28/files/2015/03/FASE-Signature-2010.png"></div>
+				<div class="col-xs-offset-2 col-xs-8 col-lg-6"><p class="intabtext" style="font-size: 25px;">Just an Economics and Finance student looking for a place in comp sci.</p></div>
+			</div>
+
+		</div>
+		<div class="tab-pane fade text-left"  id="skills">
+			<div class="row">
+				<div class="col-xs-offset-2 col-xs-10">
+					<ul style="list-style-type:none">
+					<li class="intabtext"><span class="glyphicon glyphicon-ok" style ="color:green"></span>  Web development with HTML, CSS, Bootstrap, jQuery, and Javascript</li>
+					<li class="intabtext"><span class="glyphicon glyphicon-ok" style ="color:green"></span>  Algorithms and Data Structures in Python and C</li>
+					<li class="intabtext"><span class="glyphicon glyphicon-ok" style ="color:green; margin-bottom:-10px;"></span>  Familiar with MATLAB, Excel and Microsoft Office</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<!--Resume-->
+<div class="container text-center hidden" id="resume">
+<object height="950" data="resume 3.0 black.pdf" type="application/pdf" width="860" id="resume">
+  <p>It appears you don't have a PDF plugin for this browser.
+    You can <a href="resume 3.0 black.pdf">click here to
+    download my resume.</a>
+  </p>
+</object>
+</div>
+<br>
+
+<!--Portfolo-->
+
+<div class="portback" id="portfolio">
+  <div class="container-fluid text-center" >
+
+
+  <h3 ><b>Portfolio</b></h3>
+
+  <hr>
+  <div class="row">
+	  <div class="col-lg-3">
+      <h3><b>TBD</b></h3>
+      <img data-toggle="modal" data-target="#modal-1" class="img-responsive" src="deca.jpg">
+			<div class="modal fade" id="modal-1">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						 <div class="modal-header">
+						 	<button type="button" class="close" data-dismiss="modal">&times;</button>
+						 	<h3 class="modal-title">TBD</h3>
+						 </div>
+						 <div class="modal-body">
+							 <div class="row">
+								 <div class="col-xs-8">
+										<img class="img-responsive" src="deca.jpg">
+								 </div>
+								 <div class="col-xs-4 text-center">
+									 <h3><u>What is this?</u></h3>
+									 <p>NO IDEA TBH</p>
+
+									 <h3><u>What did I use?</u></h3>
+									 <p>HTML/CSS</p>
+									 <p>Bootstrap</p>
+								 </div>
+							 </div>
+						 </div>
+
+						 <div class="modal-footer">
+							  <a href="http://newtonxu.github.io/Earl-Haig-DECA/" class="btn btn-info" target="_blank">Check this out</a>
+						 		<a href="" class="btn btn-default" data-dismiss="modal">Close</a>
+						 </div>
+					</div>
+				</div>
+			</div>
+    </div>
+
+</body>
+</html>
